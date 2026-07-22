@@ -1,11 +1,11 @@
 # OPM.Net Extension
 
 [![build status](https://img.shields.io/badge/build-passed-blue.svg)](https://github.com/cyrillef/OPMNetExt/tree/master/OPMNetSample)
-[![ObjectARX](https://img.shields.io/badge/ObjectARX-2025-blue.svg)](http://usa.autodesk.com/adsk/servlet/index?siteID=123112&id=773204)
-[![AutoCAD](https://img.shields.io/badge/AutoCAD-2025-green.svg)](http://www.autodesk.com/developautocad)
+[![ObjectARX](https://img.shields.io/badge/ObjectARX-2027-blue.svg)](http://usa.autodesk.com/adsk/servlet/index?siteID=123112&id=773204)
+[![AutoCAD](https://img.shields.io/badge/AutoCAD-2027-green.svg)](http://www.autodesk.com/developautocad)
 ![Platforms](https://img.shields.io/badge/platform-windows-lightgray.svg)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://opensource.org/licenses/MIT)
-![NET8.0](https://img.shields.io/badge/.NET-8.0-blue.svg)
+![NET10.0](https://img.shields.io/badge/.NET-10.0-blue.svg)
 
 ## Motivation
 
@@ -25,15 +25,14 @@ functionality to .NET languages.
 
 ## Dependencies
 
-* Visual Studio 2022
-* ObjectARX 2025
+* Visual Studio 2026
+* ObjectARX 2027
 
 ## Build Instructions
 
 ```bash
 git clone https://github.com/cyrillef/OPMNetExt.git
 cd OPMNetExt
-set ArxSdk=D:\ArxSdks\Arx2025
 msbuild /t:build /p:Configuration=Debug;Platform=x64 OPMNetExt.sln
 ```
 
