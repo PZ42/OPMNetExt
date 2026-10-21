@@ -55,7 +55,7 @@
     </Midl>
     <ClCompile>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalUsingDirectories>C:\DevDSA\OPMNetExt\OPMNetExt\AC2026.1.2;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <AdditionalUsingDirectories>$(MSBuildThisFileDirectory)..\AC2026.1.2;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
       <PreprocessorDefinitions>VC7;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Async</ExceptionHandling>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -76,7 +76,7 @@
     <ClCompile>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalUsingDirectories>C:\DevDSA\OPMNetExt\OPMNetExt\AC2026.1.2;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <AdditionalUsingDirectories>$(MSBuildThisFileDirectory)..\AC2026.1.2;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
       <PreprocessorDefinitions>VC7;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Async</ExceptionHandling>
     </ClCompile>

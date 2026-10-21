@@ -43,12 +43,13 @@ There is **no test suite**. This is an in-process AutoCAD module — it can only
 
 ### SDK / version paths — retargeting AutoCAD versions
 
-The AutoCAD/ARX version is pinned in **three** places that must be kept consistent:
+The AutoCAD/ARX version is pinned in **four** places that must be kept consistent:
 
-- `arxConfig.props` — `<AcadDir>` and `<ArxSdk>` UserMacros, **and** the versioned link libraries in `AdditionalDependencies` (e.g. `acdb26.lib`, `ac1st26.lib`, `acge26.lib`, `acui26.lib`, `acismobj26.lib` — the `26` corresponds to the AutoCAD release, not the year).
+- `arxConfig.props` — the `<ArxSdk>` UserMacro, **and** the versioned link libraries in `AdditionalDependencies` (e.g. `acdb25.lib`, `ac1st25.lib`, `acge25.lib`, `acui25.lib`, `acismobj25.lib` — the `25` corresponds to the AutoCAD release, not the year: 2026 = `25`, 2027 = `26`). It also adds `$(AcadDir)` as a `#using` directory, but `<AcadDir>` is currently not defined.
+- `OPMNetExt/OPMNetExt.vcxproj` — `AdditionalUsingDirectories` (Debug and Release) points at the repo-local `AC2026.1.2\` folder via `$(MSBuildThisFileDirectory)..\AC2026.1.2`. That folder holds the AutoCAD managed assemblies (`acdb25.dll`, `acdbmgd.dll`, `acmgd.dll`) the shim `#using`s; it is **not** committed (Autodesk binaries) and must be populated locally from an AutoCAD install.
 - `OPMNetSample/asdkOPMNetSample.csproj` — the hard-coded `<AssemblySearchPaths>` pointing at the ARX SDK `inc\` folder (for `AcDbMgd` / `AcMgd` / `AcCoreMgd`).
 - `.vcxproj` / `.csproj` `TargetFramework` values.
 
-The SDK/AutoCAD paths are fixed as UserMacros in `arxConfig.props`; edit that file directly to point at a different install.
+The SDK path is fixed as a UserMacro in `arxConfig.props`; edit that file directly to point at a different install.
 
-The project currently targets **AutoCAD 2027 / ARX 2027 SDK** and **.NET 10** (`net10.0` / `net10.0-windows`, lib suffix `26`).
+The project currently targets **AutoCAD 2026.1.2 / ARX 2026.1.2 SDK** and **.NET 10** (`net10.0` / `net10.0-windows`, lib suffix `25`).
