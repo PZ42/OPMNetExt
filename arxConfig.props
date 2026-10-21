@@ -2,8 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <AcadDir>C:\Program Files\Autodesk\AutoCAD 2027</AcadDir>
-    <ArxSdk>C:\DevDSA\ARX\2027\CDROM1</ArxSdk>
+    <ArxSdk>C:\DevDSA\ARX\2026.1.2\CDROM1</ArxSdk>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup>
@@ -13,7 +12,7 @@
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(ArxSdk)\Lib-x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>ac1st26.lib;acad.lib;acapp.lib;acapp_crx.lib;AcCamera.lib;accore.lib;acdb26.lib;acdbmgd.lib;AcDbPointCloudObj.lib;AcDrawBridge.lib;AcFdEval.lib;AcFdUi.lib;acge26.lib;AcGeolocationObj.lib;acgeoment.lib;acgiapi.lib;acismobj26.lib;AcJsCoreStub_crx.lib;aclmvexport_crx.lib;acModelDocObj.lib;AcMPolygonObj.lib;AcPal.lib;AcPublish_crx.lib;AcSceneOE.lib;AcTc.lib;AcTcUi.lib;acui26.lib;AdApplicationFrame.lib;adui26.lib;aNav.lib;axdb.lib;rxapi.lib;userdata.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>ac1st25.lib;acad.lib;acapp.lib;acapp_crx.lib;AcCamera.lib;accore.lib;acdb25.lib;acdbmgd.lib;AcDbPointCloudObj.lib;AcDrawBridge.lib;AcFdEval.lib;AcFdUi.lib;acge25.lib;AcGeolocationObj.lib;acgeoment.lib;acgiapi.lib;acismobj25.lib;AcJsCoreStub_crx.lib;aclmvexport_crx.lib;acModelDocObj.lib;AcMPolygonObj.lib;AcPal.lib;AcPublish_crx.lib;AcSceneOE.lib;AcTc.lib;AcTcUi.lib;acui25.lib;AdApplicationFrame.lib;adui25.lib;aNav.lib;axdb.lib;rxapi.lib;userdata.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
 </Project>
