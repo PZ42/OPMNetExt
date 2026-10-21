@@ -82,3 +82,6 @@ _TeamCity*
 .DS_Store*
 Thumbs.db
 *.bak
+
+# Autodesk reference binaries (copied locally, see AC*/README.md)
+AC*/*.dll
